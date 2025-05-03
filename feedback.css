@@ -1,0 +1,120 @@
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid gainsboro;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: forestgreen;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: yellowgreen;
+}
+
+.container {
+    background-color: snow;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-container {
+    background-color: lavender;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#testimonials-container {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.testimonial-container {
+    border: 1px solid #ddd;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-text {
+    flex-grow: 1;
+}
+
+.testimonial-name {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.testimonial-role {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    .testimonial-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial-avatar {
+        margin: 0 auto 10px;
+    }
+
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

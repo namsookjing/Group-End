@@ -1,0 +1,155 @@
+main
+{
+    padding-bottom: 20px;
+    min-height: calc(100vh - 60px);
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-section { 
+    position: relative;
+    height: 80vh; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-box 
+{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    position: relative;
+    cursor: pointer;
+}
+
+.flip-box-inner 
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box.flip-active .flip-box-inner,
+.flip-box:hover .flip-box-inner 
+{
+    transform: rotateY(180deg);
+}
+  
+.flip-box-front, 
+.flip-box-back 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-box-front 
+{
+    z-index: 2;
+}
+
+.flip-box-back 
+{
+    transform: rotateY(180deg);
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px;
+    box-sizing: border-box;
+    z-index: 1;
+    font-size: 1.2rem;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.bg-tetx-back 
+{
+    position: relative;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 2;
+    padding: 20px;
+    text-align: left;
+}
+
+.bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 0;
+}
+
+.bg-text {
+    position: relative;
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Individual background images */
+.img-amos {
+    background-image: url("Ch'ngSengHong.jpg");
+}
+
+.img-xyan {
+    background-image: url("TAN MIN XUAN.jpg");
+}
+
+.img-jc {
+    background-image: url("NamSookJing.jpg");
+}
+
+.img-amos-informal {
+    background-image: url("chng-informal.jpg");
+    z-index: -1;
+}
+
+.img-xyan-informal {
+    background-image: url("tan-informal.jpg");
+    z-index: -1;
+}
+
+.img-jc-informal {
+    background-image: url("Nam-informal.jpg");
+    z-index: -1;
+}
+
+.bg-text-back a 
+{
+    color: aqua;
+    font-style: italic;
+}
