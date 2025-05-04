@@ -50,7 +50,7 @@ nav a:hover
 nav a.active,
 nav a[aria-current="page"]
 {
-    color: #206944;
+    color: 206944;
 }
 
 i 
