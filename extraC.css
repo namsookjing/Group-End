@@ -1,4 +1,5 @@
 .extra-section {
+    font-family: "Quicksand", sans-serif;
     padding: 40px 20px;
     background-color: #f9f9f9;
     text-align: center;
@@ -28,14 +29,16 @@
 }
 
 .extra-img {
-    width: 40%;
-    object-fit: cover;
-    height: auto;
+    width: 400px;
+    height: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+    object-fit:contain;
 }
 
 .extra-info {
     padding: 20px;
-    text-align: left;
+    text-align: justify;
     flex: 1;
 }
 
@@ -55,11 +58,17 @@
     }
 
     .extra-img {
-        width: 100%;
-        height: 200px;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+        object-fit: contain;
     }
 
     .extra-info {
+        text-align: justify;
+    }
+
+    .extra-info h3 {
         text-align: center;
     }
 }

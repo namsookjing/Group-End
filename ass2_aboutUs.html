@@ -3,19 +3,83 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description", content="The details of each of the members of Group End showcasing by using html, css and javascript">
+        <meta name="description" content="The details of each of the members of Group End showcasing by using html, css and javascript">
         <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, web programming, Group End">
         <meta name="author" content="Group End">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="aboutUs.css">
         <script src="https://kit.fontawesome.com/3d04b6f172.js" crossorigin="anonymous" defer></script>
-        <script src="ass2.js"></script>
+        <script src="ass2.js" defer></script>
         <title>About Us</title>
     </head>
     <body>
         <header>
             <h1>About Us</h1>
+            <div class="social-icon" id="social">
+                <div class="dropdown">
+                    <button class="acc Github" 
+                            aria-expanded="false" 
+                            aria-controls="githubAcc"
+                            onclick="showGithubAcc(event)">
+                      <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+                      <span class="sr-only">GitHub profiles</span>
+                    </button>
+                    <div id="githubAcc" class="Myacc MygithubAcc" aria-hidden="true">
+                        <a href="https://github.com/chngsenghong" class="github-amos">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Ch'ng Seng Hong
+                        </a>
+                        <a href="https://github.com/tanminxuan" class="github-xyan">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                        <a href="https://github.com/namsookjing" class="github-jc">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Nam Sook Jing
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="acc Facebook" 
+                            aria-expanded="false" 
+                            aria-controls="facebookAcc"
+                            onclick="showFbAcc(event)">
+                      <i class="fa-brands fa-facebook fa-lg" aria-hidden="true"></i>
+                      <span class="sr-only">Facebook profiles</span>
+                    <div id="fbAcc" class="Myacc MyfbAcc" aria-hidden="true">
+                        <a href="https://www.facebook.com/amos.senghong/" class="fb-amos">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Ch'ng Seng Hong
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61550884886317&mibextid=ZbWKwL" class="fb-xyan">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                        <a href="https://www.facebook.com/share/16VJde8pW8/" class="fb-jc">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Nam Sook Jing
+                        </a>
+                    </div>
+                </div>      
+                <div class="dropdown">
+                    <button class="acc LinkedIn"
+                            aria-expanded="false"
+                            aria-controls="LinkedInAcc"
+                             onclick="showLinkedinAcc(event)">
+                        <i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i>
+                        <span class="sr-only">Facebook profiles</span>
+                    </button>
+                    <div id="LinkedInAcc" class="Myacc MyLinkedInAcc" aria-hidden="true">
+                        <a href="http://www.linkedin.com/in/min-xuan-tan-aa432120a" class="linkedIn-xyan">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                    </div>
+                </div>
+            </div>
             <nav class="top-nav" id="top">
                 <a href="index.html">
                     <i class="fa-solid fa-house"></i>
@@ -37,55 +101,6 @@
                     <i class="fa-solid fa-square-envelope"></i>
                     Feedback
                 </a>    
-                <div class="dropdown">
-                    <button class="acc Github" onclick="showGithubAcc()">
-                        <i class="fa-brands fa-github fa-lg"></i>
-                    </button>
-                    <div id="githubAcc" class=" Myacc MygithubAcc">
-                        <a href="https://github.com/chngsenghong" class="github-amos">
-                            <i class="fa-brands fa-github fa-lg"></i>
-                            Ch'ng Seng Hong
-                        </a>
-                        <a href="https://github.com/tanminxuan" class="github-xyan">
-                            <i class="fa-brands fa-github fa-lg"></i>
-                            Tan Min Xuan
-                        </a>
-                        <a href="https://github.com/namsookjing" class="github-jc">
-                            <i class="fa-brands fa-github fa-lg"></i>
-                            Nam Sook Jing
-                        </a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <button class="acc Facebook" onclick="showFbAcc()">
-                        <i class="fa-brands fa-facebook fa-lg"></i>
-                    </button>
-                    <div id="fbAcc" class="Myacc MyfbAcc">
-                        <a href="https://www.facebook.com/amos.senghong/" class="fb-amos">
-                            <i class="fa-brands fa-facebook fa-lg"></i>
-                            Ch'ng Seng Hong
-                        </a>
-                        <a href="https://www.facebook.com/profile.php?id=61550884886317&mibextid=ZbWKwL" class="fb-xyan">
-                            <i class="fa-brands fa-facebook fa-lg"></i>
-                            Tan Min Xuan
-                        </a>
-                        <a href="https://www.facebook.com/share/16VJde8pW8/" class="fb-jc">
-                            <i class="fa-brands fa-facebook fa-lg"></i>
-                            Nam Sook Jing
-                        </a>
-                    </div>
-                </div>      
-                <div class="dropdown">
-                    <button class="acc LinkedIn" onclick="showLinkedinAcc()">
-                        <i class="fa-brands fa-linkedin fa-lg"></i>
-                    </button>
-                    <div id="LinkedInAcc" class="Myacc MyLinkedInAcc">
-                        <a href="http://www.linkedin.com/in/min-xuan-tan-aa432120a" class="linkedIn-xyan">
-                            <i class="fa-brands fa-linkedin fa-lg"></i>
-                            Tan Min Xuan
-                        </a>
-                    </div>
-                </div>
                 <a href="#" class="active" aria-current="page">
                     <i class="fa-solid fa-users"></i>
                     About Us
@@ -101,76 +116,95 @@
         </header>
         <main>
             <div class="container">
-                <section class="profile-section">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div class="bg-image img-amos"></div>
-                                <div class="bg-text">
-                                    <h2>Group Leader and Lighthouse Optimizer</h2>
-                                    <h1 style="font-size:50px">I am <br> Ch'ng Seng Hong</h1>
-                                    <p>And I'm a Software Engineering Student</p>
+                <section id="aboutWebsite" class="aboutWebsite-section">
+                    <div class="aboutWebsite-container">
+                        <h2>About Our Website</h2>
+                        <p>
+                            Welcome to our portfolio website — a clean, responsive, and performance-optimized space built entirely with HTML, CSS, and JavaScript.
+                            Inspired by the minimalist and functional design of <a href="https://ethangardner.com" target="_blank">ethangardner.com</a>, this site was created to showcase our skills, background, and project work using modern web development practices.
+                        </p>
+                        <ul>
+                            <li><strong>Semantic HTML</strong> for clear structure and accessibility.</li>
+                            <li><strong>CSS Flexbox and Grid</strong> for modern, responsive layout.</li>
+                            <li><strong>Performance optimization</strong> to ensure fast loading and smooth interaction across devices.</li>
+                        </ul>
+                        <p>
+                            Explore the section below to learn more about our background and check out the <a href="ass2_PnP.html">Projects</a> page for our project showcase.
+                        </p>
+                    </div>
+                </section>                  
+                <div class="profile-container">
+                    <section class="profile-section">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="bg-image img-amos"></div>
+                                    <div class="bg-text">
+                                        <h2>Group Leader and Lighthouse Optimizer</h2>
+                                        <h1 style="font-size:50px">I am <br> Ch'ng Seng Hong</h1>
+                                        <p>And I'm a Software Engineering Student</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="bg-image img-amos-informal"></div>
-                                <div class="bg-text-back">
-                                    <h2 style="text-align: center;">Information</h2>
-                                    <p>Nickname: Amos</p>
-                                    <p>Age: 21</p>
-                                    <p>Birthday: 19 July 2004</p>
-                                    <p>Hobby: Jogging</p>
-                                    <p>Email: <a href="mailto:chngsenghong@graduate.utm.my">chngsenghong@graduate.utm.my</a></p>
+                                <div class="flip-box-back">
+                                    <div class="bg-image img-amos-informal"></div>
+                                    <div class="bg-text-back">
+                                        <h2 style="text-align: center;">Information</h2>
+                                        <p>Nickname: Amos</p>
+                                        <p>Age: 21</p>
+                                        <p>Birthday: 19 July 2004</p>
+                                        <p>Hobby: Jogging</p>
+                                        <p>Email: <a href="mailto:chngsenghong@graduate.utm.my">chngsenghong@graduate.utm.my</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="profile-section">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div class="bg-image img-xyan"></div>
-                                <div class="bg-text">
-                                    <h2>CSS Designer</h2>
-                                    <h1 style="font-size:50px">I am <br> Tan Min Xuan</h1>
-                                    <p>And I'm a Software Engineering Student</p>
+                    </section>
+                    <section class="profile-section">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="bg-image img-xyan"></div>
+                                    <div class="bg-text">
+                                        <h2>CSS Designer</h2>
+                                        <h1 style="font-size:50px">I am <br> Tan Min Xuan</h1>
+                                        <p>And I'm a Software Engineering Student</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="bg-image img-xyan-informal"></div>
-                                <div class="bg-text-back">
-                                  <h2 style="text-align: center;">Information</h2>
-                                  <p>Nickname: Xyan</p>
-                                  <p>Age: 23</p>
-                                  <p>Birthday: 21 November 2002</p>
-                                  <p>Hobby: Playing Badminton</p>
-                                  <p>Email: <a href="mailto:tanminxuan@graduate.utm.my">tanminxuan@graduate.utm.my</a></p>
+                                <div class="flip-box-back">
+                                    <div class="bg-image img-xyan-informal"></div>
+                                    <div class="bg-text-back">
+                                        <h2 style="text-align: center;">Information</h2>
+                                        <p>Nickname: Xyan</p>
+                                        <p>Age: 23</p>
+                                        <p>Birthday: 21 November 2002</p>
+                                        <p>Hobby: Playing Badminton</p>
+                                        <p>Email: <a href="mailto:tanminxuan@graduate.utm.my">tanminxuan@graduate.utm.my</a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section class="profile-section">
-                    <div class="flip-box">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <div class="bg-image img-jc"></div>
-                                <div class="bg-text">
-                                    <h2>HTML and JavaScript Developer</h2>
-                                    <h1 style="font-size:50px">I am <br> Nam Sook Jing</h1>
-                                    <p>And I'm a Software Engineering Student</p>
+                    </section>
+                    <section class="profile-section">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <div class="bg-image img-jc"></div>
+                                    <div class="bg-text">
+                                        <h2>HTML and JavaScript Developer</h2>
+                                        <h1 style="font-size:50px">I am <br> Nam Sook Jing</h1>
+                                        <p>And I'm a Software Engineering Student</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="flip-box-back">
-                                <div class="bg-image img-jc-informal"></div>
-                                <div class="bg-text-back">
-                                    <h2 style="text-align: center;">Information</h2>
-                                    <p>Nickname: JC</p>
-                                    <p>Age: 22</p>
-                                    <p>Birthday: 23 August 2003</p>
-                                    <p>Hobby: Coding</p>
-                                    <p>Email: <a href="mailto:namsookjing@graduate.utm.my"> namsookjing@graduate.utm.my </a></p>
+                                <div class="flip-box-back">
+                                    <div class="bg-image img-jc-informal"></div>
+                                    <div class="bg-text-back">
+                                        <h2 style="text-align: center;">Information</h2>
+                                        <p>Nickname: JC</p>
+                                        <p>Age: 22</p>
+                                        <p>Birthday: 23 August 2003</p>
+                                        <p>Hobby: Coding</p>
+                                        <p>Email: <a href="mailto:namsookjing@graduate.utm.my">namsookjing@graduate.utm.my </a></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,9 +216,11 @@
             <p class="info-developer">
                 Designed and developed by Group End
             </p>
-            <img src="Ch'ngSengHong.jpg" alt="developer-Amos" class="developer">
-            <img src="TAN MIN XUAN.jpg" alt="developer-Xyan" class="developer">
-            <img src="NamSookJing.jpg" alt="developer-JC" class="developer">
+            <div class="developer-img">
+                <img src="Ch'ngSengHong.jpg" alt="developer-Amos" class="developer">
+                <img src="TAN MIN XUAN.jpg" alt="developer-Xyan" class="developer">
+                <img src="NamSookJing.jpg" alt="developer-JC" class="developer">
+            </div>
             <p class="info-language">
                 Built with HTML, CSS, and JavaScript
             </p>

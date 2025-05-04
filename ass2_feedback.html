@@ -3,14 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description", content="The visitor feedback for Group End's portfolio showcasing by using html, css and javascript">
+        <meta name="description" content="The visitor feedback for Group End's portfolio showcasing by using html, css and javascript">
         <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, web programming, Group End">
         <meta name="author" content="Group End">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap">
         <link rel="stylesheet" href="feedback.css">
         <link rel="stylesheet" href="menu.css">
         <script src="https://kit.fontawesome.com/3d04b6f172.js" crossorigin="anonymous" defer></script>
-        <script src="ass2.js"></script>
+        <script src="ass2.js" defer></script>
+        <script src="feedback.js" defer></script>
         <title>Feedback</title>
     </head>
     <body>
@@ -57,26 +60,26 @@
                 <div class="form-container">
                     <form id="feedbackForm">
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-30">
                                 <label for="fname">First Name</label>
                             </div>
-                            <div class="col-75">
+                            <div class="col-70">
                                 <input type="text" id="fname" name="firstname" placeholder="Your First Name...">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-30">
                                 <label for="lname">Last Name</label>
                             </div>
-                            <div class="col-75">
+                            <div class="col-70">
                                 <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-30">
                                 <label for="roles">Roles</label>
                             </div>
-                            <div class="col-75">
+                            <div class="col-70">
                                 <select id="roles" name="roles">
                                     <option value="Student">Student</option>
                                     <option value="Lecturer">Lecturer</option>
@@ -85,10 +88,10 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-25">
+                            <div class="col-30">
                                 <label for="feedback">Feedback</label>
                             </div>
-                            <div class="col-75">
+                            <div class="col-70">
                                 <textarea id="feedback" name="Feedback" placeholder="Write Something..."></textarea>
                             </div>
                         </div>
@@ -103,9 +106,11 @@
             <p class="info-developer">
                 Designed and developed by Group End
             </p>
-            <img src="Ch'ngSengHong.jpg" alt="developer-Amos" class="developer">
-            <img src="TAN MIN XUAN.jpg" alt="developer-Xyan" class="developer">
-            <img src="NamSookJing.jpg" alt="developer-JC" class="developer">
+            <div class="developer-img">
+                <img src="Ch'ngSengHong.jpg" alt="developer-Amos" class="developer">
+                <img src="TAN MIN XUAN.jpg" alt="developer-Xyan" class="developer">
+                <img src="NamSookJing.jpg" alt="developer-JC" class="developer">
+            </div>
             <p class="info-language">
                 Built with HTML, CSS, and JavaScript
             </p>
