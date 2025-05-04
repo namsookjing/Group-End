@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description", content="The details of each of the members of Group End showcasing by using html, css and javascript">
         <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, web programming, Group End">
         <meta name="author" content="Group End">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="aboutUs.css">
         <script src="https://kit.fontawesome.com/3d04b6f172.js" crossorigin="anonymous" defer></script>
         <script src="ass2.js"></script>
         <title>About Us</title>
-        <meta name="description", content="The details of each of the members of Group End showcasing by using html, css and javascript">
     </head>
     <body>
         <header>
@@ -35,18 +36,67 @@
                 <a href="ass2_feedback.html">
                     <i class="fa-solid fa-square-envelope"></i>
                     Feedback
-                </a>                
+                </a>    
+                <div class="dropdown">
+                    <button class="acc Github" onclick="showGithubAcc()">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                    </button>
+                    <div id="githubAcc" class=" Myacc MygithubAcc">
+                        <a href="https://github.com/chngsenghong" class="github-amos">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Ch'ng Seng Hong
+                        </a>
+                        <a href="https://github.com/tanminxuan" class="github-xyan">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                        <a href="https://github.com/namsookjing" class="github-jc">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                            Nam Sook Jing
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="acc Facebook" onclick="showFbAcc()">
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                    </button>
+                    <div id="fbAcc" class="Myacc MyfbAcc">
+                        <a href="https://www.facebook.com/amos.senghong/" class="fb-amos">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Ch'ng Seng Hong
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61550884886317&mibextid=ZbWKwL" class="fb-xyan">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                        <a href="https://www.facebook.com/share/16VJde8pW8/" class="fb-jc">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                            Nam Sook Jing
+                        </a>
+                    </div>
+                </div>      
+                <div class="dropdown">
+                    <button class="acc LinkedIn" onclick="showLinkedinAcc()">
+                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                    </button>
+                    <div id="LinkedInAcc" class="Myacc MyLinkedInAcc">
+                        <a href="http://www.linkedin.com/in/min-xuan-tan-aa432120a" class="linkedIn-xyan">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                            Tan Min Xuan
+                        </a>
+                    </div>
+                </div>
                 <a href="#" class="active" aria-current="page">
                     <i class="fa-solid fa-users"></i>
                     About Us
                 </a>
-                <a href="javascript:void(0);" class="bar-icon" onclick="topNav()">
+                <button class="bar-icon" onclick="topNav()">
                     <div class="bar" onclick="menu(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
-                </a>
+                </button>
             </nav>
         </header>
         <main>

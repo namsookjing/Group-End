@@ -19,7 +19,7 @@ section {
     color: #333; 
 }
 
-.cntainer img {
+.container img {
     max-width: 100%; 
     height: auto; 
     display: block;
@@ -54,8 +54,6 @@ section {
 .project-links a:hover {
     background-color: #0056b3;
 }
-
-
 
 .project-grid {
     display: grid;

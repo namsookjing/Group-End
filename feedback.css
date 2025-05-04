@@ -1,6 +1,7 @@
 input[type=text],
 select,
 textarea {
+    font-family: 'Aref Ruqaa Ink';
     width: 100%;
     padding: 12px;
     border: 1px solid gainsboro;

@@ -3,18 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description", content="Group End's portfolio showcasing by using html, css and javascript">
         <meta name="keywords" content="portfolio, web development, HTML, CSS, JavaScript, web programming, Group End">
         <meta name="author" content="Group End">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&display=swap">
         <link rel="stylesheet" href="menu.css">
         <link rel="stylesheet" href="ass2.css">
         <script src="https://kit.fontawesome.com/3d04b6f172.js" crossorigin="anonymous" defer></script>
         <script src="ass2.js"></script>
         <title>Group End</title>
-        <meta name="description", content="Group End's portfolio showcasing by using html, css and javascript">
     </head>
     <body>
         <header>
-            <h1>Group End</h1>
+            <h1>Group End</h1> <!--Menu Bar-->
             <nav class="top-nav" id="top">
                 <a href="#" class="active">
                     <i class="fa-solid fa-house"></i>
@@ -40,33 +41,34 @@
                     <i class="fa-solid fa-users"></i>
                     About Us
                 </a>
-                <a href="javascript:void(0);" class="bar-icon" onclick="topNav()">
+                <button class="bar-icon" onclick="topNav()">
                     <div class="bar" onclick="menu(this)">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
                     </div>
-                </a>
+                </button>
             </nav>
         </header>
         <main>
             <div class="container">
                 <section id="hero">
                     <div class="hero-content">
+                    <!--Group Photo for Group End-->
                         <img src="GroupPhoto.jpg" alt="Group Photo" class="group-img">
                         <h2>Welcome to Group End</h2>
                         <p>We are a team of aspiring software engineers eager to share our journey and projects.</p>
                     </div>
                 </section>
                 <section id="about-preview">
-                    <h2>About Us</h2>
+                    <h2>About Us</h2> <!--Short Biography-->                  
                     <div class="about-text">
                         <h3>Get to Know Us</h3>
                         <p>Group End is a collaborative team of Year 2 Semester 2 students from Universiti Teknologi Malaysia, passionate about crafting innovative software solutions. We specialize in Web Programming and are driven by the goal to develop a wonderful Webpages.</p>
                         <a href="ass2_aboutUs.html" class="read-more-btn">Discover Our Team</a>
                     </div>
                 </section>
-                <section id="projects-preview">
+                <section id="projects-preview"> <!--Project Showcase-->
                     <h2>Our Work</h2>
                     <div class="projects-grid">
                         <div class="project-card">
@@ -79,7 +81,7 @@
                             </div>
                         </div>
                         <div class="project-card">
-                            <img src="project-2.png" alt="Project 2">
+                            <img src="Project-2.png" alt="Project 2">
                             <div class="card-overlay">
                                 <h3>Car Service Simulation in C++ Using Queue</h3>
                                 <p>In this project, we created a Car Service Simulation program using a queue implemented with 

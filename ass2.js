@@ -1,4 +1,5 @@
-function topNav() {
+function topNav() 
+{
     var x = document.getElementById("top");
     if (x.className === "top-nav") {
         x.className += " responsive";
@@ -7,11 +8,13 @@ function topNav() {
     }
 }
 
-function menu(x) {
+function menu(x) 
+{
     x.classList.toggle("change");
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () 
+{
     loadTestimonials();
 
     const feedbackForm = document.getElementById('feedbackForm');
@@ -33,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function saveFeedback(firstName, lastName, role, feedbackText) {
+function saveFeedback(firstName, lastName, role, feedbackText) 
+{
     const newFeedback = {
         name: `${firstName} ${lastName}`,
         role: role,
@@ -45,7 +49,8 @@ function saveFeedback(firstName, lastName, role, feedbackText) {
     localStorage.setItem('testimonials', JSON.stringify(testimonials));
 }
 
-function loadTestimonials() {
+function loadTestimonials() 
+{
     const testimonialsContainer = document.getElementById('testimonials-container');
     testimonialsContainer.innerHTML = '';
 
@@ -84,3 +89,26 @@ function loadTestimonials() {
         testimonialsContainer.appendChild(testimonialDiv);
     });
 }
+
+
+function showGithubAcc() 
+{
+    document.getElementById("githubAcc").classList.toggle("show");
+}
+    
+function showFbAcc() 
+{
+    document.getElementById("fbAcc").classList.toggle("show");
+}
+    
+function showLinkedinAcc() {
+    document.getElementById("LinkedInAcc").classList.toggle("show");
+}
+    
+function closeAllDropdowns() {
+    var dropdowns = document.getElementsByClassName("Myacc");
+    for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].classList.remove('show');
+    }
+}
+    

@@ -6,7 +6,7 @@
 body 
 {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Aref Ruqaa Ink';
 }
 
 header 
@@ -32,6 +32,22 @@ nav
     align-items: center;
 }
 
+nav button
+{
+    display: block;
+    color: darkslategray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: transparent;
+    border: 0;
+}
+
+nav .bar-icon
+{
+    padding: 14px 16px;
+}
+
 nav a 
 {
     display: block;
@@ -42,7 +58,8 @@ nav a
     font-size: 17px;
 }
 
-nav a:hover 
+nav a:hover,
+nav button:hover 
 {
     color: dimgray;
 }
@@ -160,7 +177,12 @@ footer
     {
         display: block;
     }
-    .top-nav a.bar-icon
+    .top-nav button.bar-icon
+    {
+        display: block;
+    }
+
+    .top-nav button.acc
     {
         display: block;
     }
@@ -174,7 +196,7 @@ footer
         align-items: flex-start;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 10;
         width: 100%;
         background-color: lightgray;
         z-index: 10;
@@ -193,9 +215,14 @@ footer
         display: block;
         text-align: left;
     }
-    .top-nav.top-nav.responsive i 
+    .top-nav.responsive i 
     {
         margin-right: 10px;
     }
 
+    .top-nav.responsive .acc,
+    .top-nav.responsive .Myacc
+    {
+        display: none;
+    }
 }
